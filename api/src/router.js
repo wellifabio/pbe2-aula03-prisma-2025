@@ -9,5 +9,7 @@ router.get('/',(req, res)=>{
 
 router.post('/clientes',Cliente.create);
 router.get('/clientes',Cliente.read);
+router.patch('/clientes/:id',Cliente.update);
+router.delete('/clientes/:id',Cliente.delete);
 
 module.exports = router;
