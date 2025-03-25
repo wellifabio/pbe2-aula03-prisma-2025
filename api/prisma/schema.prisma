@@ -20,7 +20,7 @@ model Telefone{
   clienteId Int
   numero String @db.VarChar(20)
   tipo String @db.VarChar(20)
-  cliente Cliente @relation(fields: [clienteId], references: [id])
+  cliente Cliente @relation(fields: [clienteId], references: [id], onDelete: Cascade)
 }
 
 model Pedido{

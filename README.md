@@ -12,7 +12,7 @@ Projeto de estudos do ORM Prisma com MySQL no Node.JS
 cd api
 npm install
 ```
-- 3 Crie o arquivo .env na pasta api contendo a variável de ambiente de concexão
+- 3 Crie o arquivo .env na pasta api contendo as variáveis de ambiente
 ```js
 DATABASE_URL="mysql://root@localhost:3306/petshop?schema=public&timezone=UTC"
 PORT=5000
