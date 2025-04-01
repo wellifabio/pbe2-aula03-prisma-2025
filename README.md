@@ -1,5 +1,5 @@
 # SNOOPY PetSHop
-Projeto full stack para estudos
+- Projeto full stack para estudos
     - Back-End
         - ORM Prisma com MySQL no Node.JS
         - Calculo nos controllers
