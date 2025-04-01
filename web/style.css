@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -36,6 +37,22 @@ footer {
     text-align: center;
     padding: 1em 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sandwish {
+    display: none;
+
+    & button {
+        border-radius: 50px;
+    }
+}
+
+.sandwish {
+    position: absolute;
+    top: 7vh;
+    left: 0vw;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -109,7 +126,7 @@ button:hover {
 .janela {
     width: 50%;
     height: fit-content;
-    max-height: 70%;
+    max-height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,7 +156,8 @@ button:hover {
         gap: 10px;
 
         & input,
-        textarea {
+        textarea,
+        select {
             width: 97%;
             padding: 10px;
             border: none;
@@ -147,13 +165,37 @@ button:hover {
             box-shadow: 0 0 10px var(--t1);
         }
 
-        & button{
+        & button {
             width: 100%;
+        }
+    }
+
+    & span {
+        width: 100%;
+        max-height: 100%;
+        overflow-y: auto;
+
+        & table {
+            width: 100%;
+            border-collapse: collapse;
+
+            & tr:nth-child(odd) {
+                background-color: var(--t2);
+            }
+
+            & th,
+            td {
+                padding: 10px;
+            }
+
+            & th {
+                border-bottom: solid 1px var(--c2);
+            }
         }
     }
 }
 
-.oculto{
+.oculto {
     display: none;
 }
 
@@ -164,16 +206,51 @@ button:hover {
         flex-direction: column;
         gap: 10px;
     }
+    
+    h1{
+        font-size: larger;
+        width: 100%;
+        text-align: center;
+    }
 
     nav {
-        flex-direction: column;
         display: none;
+        background-color: #100E10;
+        padding: 5PX;
+    }
+
+    #sandwish {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
     }
 
     .janela {
         width: 95%;
-        & form{
+
+        & form {
             width: 90%;
         }
+    }
+
+    th {
+        display: none;
+    }
+
+    tbody tr {
+        display: block;
+        border-bottom: solid 1px var(--c3);
+    }
+
+    td {
+        display: block;
+        text-align: right;
+    }
+
+    td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
     }
 }

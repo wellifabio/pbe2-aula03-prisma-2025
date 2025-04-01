@@ -6,7 +6,7 @@ const Telefone = require('./controllers/telefone');
 const Pedido = require('./controllers/pedido');
 
 router.get('/',(req, res)=>{
-    res.json({titulo:'SNOOPY PetSHop API'});
+    res.json({titulo:'SNOOPY PetSHop'});
 });
 
 router.post('/clientes',Cliente.create);
