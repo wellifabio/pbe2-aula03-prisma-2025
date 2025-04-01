@@ -1,5 +1,15 @@
 # SNOOPY PetSHop
-Projeto de estudos do ORM Prisma com MySQL no Node.JS
+Projeto full stack para estudos
+    - Back-End
+        - ORM Prisma com MySQL no Node.JS
+        - Calculo nos controllers
+        - Where, Select e Include
+    - Front-End (Vanilla JS)
+        - Modais
+        - @media query
+        - fetch API
+        - Tabela zebrada e responsiva
+        - Cards
 ## Tecnologias
 - Node.JS
 - VsCode
