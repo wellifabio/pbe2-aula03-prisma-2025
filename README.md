@@ -1,15 +1,11 @@
 # SNOOPY PetSHop
-- Projeto full stack para estudos
-    - Back-End
-        - ORM Prisma com MySQL no Node.JS
-        - Calculo nos controllers
-        - Where, Select e Include
-    - Front-End (Vanilla JS)
-        - Modais
-        - @media query
-        - fetch API
-        - Tabela zebrada e responsiva
-        - Cards
+- API Back-end para estudos de um sistema de registro de pedidos no balcão de um petshop
+
+|MER x DER e Diagrama de Classes|
+|-|
+|![MER x DER](./docs/der+dc.png)|
+
+
 ## Tecnologias
 - Node.JS
 - VsCode
@@ -40,15 +36,11 @@ npm start
 # ou
 npx nodemon
 ```
-### Front-End
-- 7 Para executar o Front-end, navegue até a pasta web e abra o **index.html** com o Live Server do VsCOde.
+- 7 Abra o insomnia e importe as rotas de teste de ./docs/insomina.yaml
 
-|MER x DER e Diagrama de Classes|
+|Testes com Insomnia|
 |-|
-|![MER x DER](./docs/der+dc.png)|
-
-|Wireframes|
-|-|
-|![Wireframe01](./docs/prints/wireframe01.png)|
-|![Wireframe02](./docs/prints/wireframe02.png)|
-|![Wireframe03](./docs/prints/wireframe03.png)|
+|![Wireframe01](./docs/insomina01.png)
+|![Wireframe02](./docs/insomina02.png)
+|![Wireframe03](./docs/insomina03.png)
+|![Wireframe04](./docs/insomina04.png)
